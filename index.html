@@ -2,52 +2,50 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poggers</title>
-  <link rel="shortcut icon" href="IMG/ICON.png" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poggers</title>
+    <link rel="shortcut icon" href="IMG/icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <div class="intro">
-      <img class="logo" src="IMG/Poggers.png" alt="Poggers">
-      <h2>Os Poggers ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h2>
+        <img class="logo" src="IMG/poggers.png" alt="Poggers">
+        <h2>Os Poggers ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h2>
     </div>
     <div>
-      <form>
-        <input type="text" placeholder="Email ou telefone" id="login">
-        <input type="password" placeholder="Senha"id="senha">
-        <button class="entrar"onclick="logar(); return false">Entrar</button>
-        <a href="#">Esqueceu a senha?</a>
-        <button class="criar-conta">Criar nova conta</button>
-      </form>
-  
-      <p><a href="#">Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
+        <form>
+            <input type="text" placeholder="Email ou telefone" id="login">
+            <input type="password" placeholder="Senha" id="senha">
+            <button class="entrar" onclick="logar(); return false">Entrar</button>
+            <a href="#">Esqueceu a senha?</a>
+            <button class="criar-conta">Criar nova conta</button>
+        </form>
+
+        <p><a href="#">Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
     </div>
-  </div>
-  <footer>Poggers  © <span id="year"></span></footer>
-  <script>
+</div>
+<footer>Poggers © <span id="year"></span></footer>
+<script>
     const year = document.getElementById('year');
     const actualYear = new Date();
 
     year.innerHTML = actualYear.getFullYear();
-  </script>
-  <script>
-    function logar(){
-   var login = document.getElementById("login").value;
-   var senha = document.getElementById("senha").value;
 
-   if(login == "admin" && senha == "admin"){
-       alert('Sucesso');
-       location.href="home.html"
+    function logar() {
+        var login = document.getElementById("login").value;
+        var senha = document.getElementById("senha").value;
 
-   }else{
-       alert('Usuario ou senha incorretos');
-       }
-}
-</script>>
+        if (login == "admin" && senha == "admin") {
+            alert('Sucesso');
+            location.href = "home.html"
+
+        } else {
+            alert('Usuario ou senha incorretos');
+        }
+    }
+</script>
 </body>
 
 </html>   
